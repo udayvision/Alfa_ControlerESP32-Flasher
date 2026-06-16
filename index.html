@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Alfa_ControlerESP32 Firmware Installer</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
+
+<style>
+
+:root{
+--bg:#0f172a;
+--card:#111827;
+--border:#1f2937;
+--text:#f8fafc;
+--muted:#94a3b8;
+--accent1:#2563eb;
+--accent2:#06b6d4;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:linear-gradient(180deg,#0f172a,#111827);
+color:var(--text);
+line-height:1.6;
+padding:30px 15px;
+}
+
+.container{
+max-width:1000px;
+margin:auto;
+}
+
+.hero{
+text-align:center;
+padding:50px 20px;
+}
+
+.hero h1{
+font-size:2.4rem;
+font-weight:700;
+margin-bottom:10px;
+}
+
+.hero p{
+color:var(--muted);
+font-size:1.05rem;
+}
+
+.card{
+background:var(--card);
+border:1px solid var(--border);
+border-radius:18px;
+padding:24px;
+margin-top:20px;
+}
+
+.card h2{
+margin-bottom:15px;
+font-size:1.2rem;
+}
+
+ul{
+padding-left:20px;
+}
+
+li{
+margin-bottom:10px;
+}
+
+.install-area{
+text-align:center;
+padding:25px;
+}
+
+esp-web-install-button{
+display:inline-block;
+}
+
+esp-web-install-button::part(button){
+background:linear-gradient(
+135deg,
+var(--accent1),
+var(--accent2)
+);
+
+color:white;
+border:none;
+border-radius:12px;
+
+padding:14px 28px;
+
+font-size:16px;
+font-weight:600;
+
+cursor:pointer;
+
+transition:all .25s ease;
+
+box-shadow:
+0 4px 12px rgba(37,99,235,.25);
+}
+
+esp-web-install-button::part(button):hover{
+transform:translateY(-1px);
+box-shadow:
+0 8px 18px rgba(37,99,235,.35);
+}
+
+.button-link{
+display:inline-block;
+margin-top:15px;
+padding:12px 20px;
+text-decoration:none;
+border-radius:10px;
+background:#1e293b;
+color:white;
+border:1px solid #334155;
+}
+
+.button-link:hover{
+background:#293548;
+}
+
+.warning{
+border-left:4px solid #f59e0b;
+}
+
+.footer{
+text-align:center;
+padding:30px;
+color:#94a3b8;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:1.9rem;
+}
+
+.card{
+padding:18px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="hero">
+
+<h1>Alfa_ControlerESP32</h1>
+
+<p>
+Professional Browser Firmware Installer
+</p>
+
+<p>
+Designed and Maintained by udayvision
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Supported Hardware</h2>
+
+<ul>
+<li>ESP32-WROOM</li>
+<li>ESP32 Chip Family</li>
+<li>USB Flashing via Chrome / Edge</li>
+</ul>
+
+</div>
+
+<div class="card install-area">
+
+<h2>Install Firmware</h2>
+
+<esp-web-install-button manifest="manifest.json">
+</esp-web-install-button>
+
+<br>
+
+<a
+class="button-link"
+href="https://www.youtube.com/"
+target="_blank">
+Tutorial Video
+</a>
+
+</div>
+
+<div class="card">
+
+<h2>Installation Steps</h2>
+
+<ol>
+
+<li>Connect ESP32 via USB.</li>
+
+<li>Open Chrome or Microsoft Edge.</li>
+
+<li>Click Flash Firmware.</li>
+
+<li>Select Serial Port.</li>
+
+<li>Install Firmware.</li>
+
+<li>Wait until flashing completes.</li>
+
+<li>Device automatically reboots.</li>
+
+</ol>
+
+</div>
+
+<div class="card warning">
+
+<h2>Important Notes</h2>
+
+<ul>
+
+<li>Use data-capable USB cable.</li>
+
+<li>Close Arduino Serial Monitor.</li>
+
+<li>Disconnect other serial applications.</li>
+
+<li>Use latest Chrome or Edge.</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>Troubleshooting</h2>
+
+<ul>
+
+<li>Try another USB cable.</li>
+
+<li>Install USB-UART driver.</li>
+
+<li>Press BOOT while connecting.</li>
+
+<li>Refresh page and reconnect.</li>
+
+<li>Use a direct motherboard USB port.</li>
+
+</ul>
+
+</div>
+
+<div class="footer">
+
+© 2026 udayvision
+
+</div>
+
+</div>
+
+</body>
+</html>

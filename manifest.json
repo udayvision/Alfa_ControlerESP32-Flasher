@@ -1,0 +1,31 @@
+{
+  "name": "Alfa_ControlerESP32",
+  "version": "1.0.0",
+  "home_assistant_domain": "",
+  "new_install_prompt_erase": true,
+
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+
+      "parts": [
+        {
+          "path": "firmware/GV13E20i.ino.bootloader.bin",
+          "offset": "0x1000"
+        },
+        {
+          "path": "firmware/GV13E20i.ino.partitions.bin",
+          "offset": "0x8000"
+        },
+        {
+          "path": "firmware/boot_app0.bin",
+          "offset": "0xe000"
+        },
+        {
+          "path": "firmware/GV13E20i.ino.bin",
+          "offset": "0x10000"
+        }
+      ]
+    }
+  ]
+}
